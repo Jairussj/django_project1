@@ -149,9 +149,9 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
-AWS_ACCESS_KEY_ID = 'AKIAZOZQFLDACKB2UQGF'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_S3_REGION_NAME = 'eu-north-1'
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME')
 AWS_STORAGE_BUCKET_NAME = 'jairus-django-bucket'
 AWS_DEFAULT_ACL = 'public-read'  # Change as needed
 
